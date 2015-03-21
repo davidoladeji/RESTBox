@@ -17,6 +17,32 @@ import java.util.Map;
 @RestController
 public class MainController {
 
+    @RequestMapping(produces = {"text/xml"}, method = RequestMethod.GET)
+    public
+    @ResponseBody
+    Distances<Distance> getAllDistances() throws IOException {
+
+
+        Database db = DatabaseBuilder.open(new File("src/file/distanceDB.mdb"));
+        Table table = db.getTable("Distance");
+        List<Distance> distanceList = new ArrayList<>();
+
+        for (Row row : table) {
+            Distance distance = new Distance();
+
+            distance.setId(row.getInt(("DistanceID")));
+            distance.setMiles(row.getInt("DistanceInMiles"));
+            distance.setTownone(row.getInt("Town1"));
+            distance.setTowntwo(row.getInt(("Town2")));
+            distanceList.add(distance);
+
+        }
+
+        Distances<Distance> distancesList = new Distances<Distance>(distanceList);
+
+
+        return distancesList;
+    }
 
     @RequestMapping(value = "calcdistance", produces = {"text/xml", "application/json"}, method = RequestMethod.GET)
     public
@@ -95,35 +121,6 @@ public class MainController {
         }
 
     }
-
-
-    @RequestMapping(value = "alldistances", produces = {"text/xml", "application/json"}, method = RequestMethod.GET)
-    public
-    @ResponseBody
-    Distances<Distance> getAllDistances() throws IOException {
-
-
-        Database db = DatabaseBuilder.open(new File("src/file/distanceDB.mdb"));
-        Table table = db.getTable("Distance");
-        List<Distance> distanceList = new ArrayList<>();
-
-        for (Row row : table) {
-            Distance distance = new Distance();
-
-            distance.setId(row.getInt(("DistanceID")));
-            distance.setMiles(row.getInt("DistanceInMiles"));
-            distance.setTownone(row.getInt("Town1"));
-            distance.setTowntwo(row.getInt(("Town2")));
-            distanceList.add(distance);
-
-        }
-
-        Distances<Distance> distancesList = new Distances<Distance>(distanceList);
-
-
-        return distancesList;
-    }
-
 
     @RequestMapping(value = "alltowns", produces = {"text/xml", "application/json"}, method = RequestMethod.GET)
     public

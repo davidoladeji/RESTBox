@@ -15,11 +15,15 @@
     <orderEntry type="library" name="commons-lang-2.2" level="project" />
     <orderEntry type="library" name="jackcess-2.0.8" level="project" />
     <orderEntry type="library" name="javax.ws.rs-api-2.0" level="project" />
-    <orderEntry type="library" name="jersey-client" level="project" />
-    <orderEntry type="library" name="jersey-common" level="project" />
-    <orderEntry type="library" name="jersey-container-servlet" level="project" />
-    <orderEntry type="library" name="jersey-container-servlet-core" level="project" />
-    <orderEntry type="library" name="jersey-server" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/testng/lib/testng.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.2.2.RELEASE" level="project" />
@@ -58,36 +62,5 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-oxm:4.1.5.RELEASE" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.jayway.restassured:rest-assured:2.4.0" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy:2.3.10" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-xml:2.3.10" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpclient:4.3.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpcore:4.3.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: commons-codec:commons-codec:1.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpmime:4.3.6" level="project" />
-    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-library:1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.ccil.cowan.tagsoup:tagsoup:1.2.1" level="project" />
-    <orderEntry type="library" name="Maven: com.jayway.restassured:json-path:2.4.0" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-json:2.3.10" level="project" />
-    <orderEntry type="library" name="Maven: com.jayway.restassured:rest-assured-common:2.4.0" level="project" />
-    <orderEntry type="library" name="Maven: com.jayway.restassured:xml-path:2.4.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.3.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.jayway.restassured:json-schema-validator:2.4.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.github.fge:json-schema-validator:2.2.5" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.github.fge:json-schema-core:1.2.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.github.fge:uri-template:0.9" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.github.fge:msg-simple:1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.github.fge:btf:1.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.guava:guava:16.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.github.fge:jackson-coreutils:1.8" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.mozilla:rhino:1.7R4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: joda-time:joda-time:2.5" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.googlecode.libphonenumber:libphonenumber:6.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: javax.mail:mailapi:1.4.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: javax.activation:activation:1.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.google.code.findbugs:jsr305:2.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: net.sf.jopt-simple:jopt-simple:4.6" level="project" />
-    <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
   </component>
 </module>
